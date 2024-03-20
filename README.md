@@ -30,7 +30,7 @@ With the data ready, we decided to build our first classication model - Decision
 
 ![image](https://github.com/tejus15/Customer_Classifier/assets/78174194/74bfbc82-6be1-40ee-89a1-f58908790085)
 
-<br>To avoid overfitting, we will be pruning the decision tree. To determine the best tree depth, we used 10-fold cross validation, by trying as many possible depths as we could. Based on the results decision tree of depth 1 has the highest accuracy (70.8%) and that is what we recommend the depth of the tree should be after pruning it.   
+<br>To avoid overfitting, we will be pruning the decision tree. To determine the best tree depth, we used 10-fold cross validation, by trying as many possible depths as we could. Based on the results decision tree of depth 1 has the highest mean accuracy (70.8%) and that is what we recommend the depth of the tree should be after pruning it.   
   
 The figure below is the decision tree with depth 1. Here, it shows that ordfreq, is significant in influence the response class.
 
@@ -39,14 +39,14 @@ The figure below is the decision tree with depth 1. Here, it shows that ordfreq,
 
 
 Now we are developing a random forest classifier with 100 trees. We used 10-fold cross-validation to be consistent and to compare with other models built in this project. We ran tests on the values of 1, 2, and 3 depths with 100 trees in the random forest. We found that, in this version, depth 3 performed the best, with 71.2% accuracy.
-This model performs slightly better with depth 3 as the accuracy is 71.2%. The accuracy of depth 1 is the same for decision tree and random forest.  
+This model performs slightly better with depth 3 as the mean accuracy is 71.2%. The mean accuracy of depth 1 is the same for decision tree and random forest.  
 
-We performed the same test with 50 trees and received the same results. Depth 3 remains our recommendation with the highest accuracy of 71.20%. Since 50 and 100 trees give the same result, we chose the random forest classifier with 50 trees.
+We performed the same test with 50 trees and received the same results. Depth 3 remains our recommendation with the highest mean accuracy of 71.20%. Since 50 and 100 trees give the same result, we chose the random forest classifier with 50 trees.
  
  
 We now consider k-nearest neighbor modes. Using the 10-fold cross validation, we identified the best value of k, by trying various values of k (5-10). 
 Before proceeding with KNN, we standardized the independent variables because KNN depends on distances between data points. Standardizing the data ensures that few variables does not have a greater impact than the others. 
-We performed a k-nearest-neighbor validation for values of k from 5-10. We recommend k values of 6, 8, 10 with accuracies of 69.5%, 69.7%, and 70.65% respectively. We chose k=10 since it has the highest accuracy among the others. Among the models built so far, this model performs worst in terms of accuracy.
+We performed a k-nearest-neighbor validation for values of k from 5-10. We recommend k values of 6, 8, 10 with mean accuracies of 69.5%, 69.7%, and 70.65% respectively. We chose k=10 since it has the highest accuracy among the others. Among the models built so far, this model performs worst in terms of accuracy.
 ![image](https://github.com/tejus15/Customer_Classifier/assets/78174194/0850faca-a6fe-403b-90ca-5ae4f827fb1e)
 
 
@@ -72,7 +72,7 @@ We filtered the rows and created a dataset for the lapsing customer (customers w
 
 We created two disjoint datasets from our original dataset – One containing lapsing customers and the other containing non-lapsing customers. 
 We evaluated our Logistic Regression model using the non-lapsing customer dataset using 10 folds cross validation. These are the results we got:<br>
-Lapsing Customers: Accuracy of Logistic Regression = 72.59% <br>
+Lapsing Customers: Mean Accuracy of Logistic Regression = 72.59% <br>
 
 
 # CREDITS
