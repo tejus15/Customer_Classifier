@@ -77,10 +77,10 @@ Lapsing Customers: Accuracy of Logistic Regression = 72.59% <br>
 
 # CREDITS
 
-Tejus Sanjay Sharma
-Sumi Batas
-Mihir Hirave
-Vipul Suresh Sonje
-Rishika Rakwal
-Syam Menon
+Tejus Sanjay Sharma <br>
+Sumi Batas <br>
+Mihir Hirave <br>
+Vipul Suresh Sonje <br>
+Rishika Rakwal <br>
+Syam Menon <br>
 
