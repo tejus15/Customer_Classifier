@@ -22,7 +22,7 @@ A direct marketing firm mails catalogs to its customer base of about 5 million h
 The broad objective is to classify customers who are likely to respond to mailers, and customers who are not (i.e., response) is the dependent variable
 
 
-# PROCESS
+# DEVELOPMENT
 We created histograms for all numeric variables. We found that n24, rev24, and revlast were strongly right skewed. Elpsdm was far less skewed, and ordfreq and ordcat were not skewed. We transformed the first three variables with a log transformation to reduce skewness. We also checked if our dataset had any missing values. 
 ![image](https://github.com/tejus15/Customer_Classifier/assets/78174194/1cecb0a1-3d68-4eeb-892f-867bd934a430)
 
