@@ -6,7 +6,7 @@ A direct marketing firm mails catalogs to its customer base of about 5 million h
 <table>
 <th>Variables</th><th>Description</th>
   <tr><td>id</td><td>customer ID</td> </tr>
-  <tr><td>n24</td><td>number of items in the last 24 months</td> </tr>
+  <tr><td>n24</td><td>number of items ordered in the last 24 months</td> </tr>
   <tr><td>rev24</td><td>total order amount ($) in the last 24 months</td> </tr>
   <tr><td>revlast</td><td>amount of last order ($)</td> </tr>
   <tr><td>elpsdm</td><td>time elapsed since last order (months)</td> </tr>
